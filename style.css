@@ -52,11 +52,23 @@ hr {
   margin: auto;
 }
 .content {
-  padding-top: 5rem;
+  padding: 6rem 1rem 1rem 1rem;
+  margin: 0rem 4rem 0;
+}
+.title {
+  text-align: center;
+  font-size: 5em;
+  padding: 12rem 0rem 2rem;
+}
+.desc {
+  text-align: center;
+  font-size: 2em;
+  padding: 1rem 0rem 2rem;
 }
 .content ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  padding-top: 6rem;
 }
 .content ul li {
   list-style: none;
@@ -69,4 +81,54 @@ hr {
   padding: 5rem 4rem;
   border-radius: 50%;
   margin: 6rem auto 1rem;
+}
+/* ---------------------------------- */
+
+.card {
+  width: 21.1rem;
+  display: grid;
+  margin: 5rem auto 0;
+  align-items: center;
+  border: 1px solid black;
+  /* position: absolute; */
+  z-index: -1;
+}
+.cart_logo {
+  position: absolute;
+  z-index: 1;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+.card img {
+  object-fit: contain;
+}
+.product {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+}
+.product h4 {
+  padding-left: 1rem;
+  justify-content: flex-start;
+}
+.product p {
+  padding-right: 1rem;
+}
+.para {
+  padding: 1rem;
+}
+.para p {
+  line-height: 18px;
+  max-height: 54px;
+  overflow: hidden;
+}
+.btn {
+  display: flex;
+  justify-content: space-around;
+}
+button {
+  padding: 0.4rem 1.6rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
 }
