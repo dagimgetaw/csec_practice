@@ -32,6 +32,9 @@ input {
   border-radius: 1.5rem;
   border: 1px solid black;
 }
+.search_icon {
+  display: none;
+}
 .item {
   display: flex;
   justify-content: center;
@@ -47,9 +50,17 @@ input {
   cursor: pointer;
   font-size: 16px;
 }
+.item ul li a {
+  color: black;
+  text-decoration: none;
+}
 hr {
   width: 95%;
   margin: auto;
+}
+.home {
+  padding: 6rem 1rem 1rem 1rem;
+  margin: 0rem 4rem 0;
 }
 .content {
   padding: 6rem 1rem 1rem 1rem;
@@ -131,4 +142,116 @@ button {
   padding: 0.4rem 1.6rem;
   margin-bottom: 1rem;
   cursor: pointer;
+}
+/* ----------------------------------- */
+@media (max-width: 1000px) {
+  .content {
+    padding: 6rem 1rem 1rem 1rem;
+    margin: 0rem 2rem 0;
+  }
+  .search {
+    left: 46%;
+  }
+}
+@media (max-width: 950px) {
+  .content {
+    padding: 6rem 1rem 1rem 1rem;
+    margin: 0rem 8rem 0;
+  }
+  .content ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 6rem;
+  }
+  input {
+    width: 25em;
+    padding: 1rem 2rem;
+  }
+  .search {
+    left: 42%;
+  }
+}
+@media (max-width: 800px) {
+  input {
+    width: 20em;
+    padding: 1rem 2rem;
+  }
+  .search {
+    left: 38%;
+  }
+  .content {
+    margin: 0rem 4rem 0;
+  }
+  .title {
+    font-size: 4em;
+    padding: 12rem 0rem 2rem;
+  }
+  .desc {
+    font-size: 1.8em;
+  }
+}
+@media (max-width: 700px) {
+  input {
+    width: 18em;
+    padding: 1rem 2rem;
+  }
+  .search {
+    left: 35%;
+  }
+  .content {
+    margin: 0rem 2rem 0;
+  }
+}
+@media (max-width: 650px) {
+  input {
+    display: none;
+  }
+  .search {
+    left: 26%;
+  }
+  .search_logo {
+    border: 1px solid gray;
+    padding: 0.8rem 0.8rem;
+    border-radius: 50%;
+  }
+  .search_icon {
+    cursor: pointer;
+    display: flex;
+  }
+  .home {
+    padding: 6rem 1rem 1rem 1rem;
+    margin: 0rem 2rem 0;
+  }
+  .content ul {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding-top: 6rem;
+  }
+  .title {
+    font-size: 3.5em;
+    padding: 12rem 0rem 2rem;
+  }
+  .desc {
+    font-size: 1.4em;
+  }
+}
+@media (max-width: 500px) {
+  .logo img {
+    width: 65px;
+    height: 65px;
+    padding-left: 0rem;
+  }
+  .item ul li {
+    list-style: none;
+    padding-right: 1rem;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .title {
+    font-size: 4em;
+    padding: 12rem 0rem 2rem;
+  }
+  .desc {
+    font-size: 1.3em;
+  }
 }
