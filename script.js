@@ -48,4 +48,3 @@ if (mark >= 90) {
 } else {
   console.log("F");
 }
-grade = "A";
