@@ -3,8 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>TODO LIST</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>TODO LIST</h1>
+    </header>
+    <div class="main">
+      <div class="search_box">
+        <input type="text" placeholder="Search note... " class="search" />
+        <i class="fa-solid fa-magnifying-glass search_icon"></i>
+      </div>
+      <div class="dropdown">
+        <select>
+          <option value="all">All</option>
+          <option value="complete">Complete</option>
+          <option value="incomplete">Incomplete</option>
+        </select>
+      </div>
+      <div class="color">
+        <i class="fa-solid fa-moon"></i>
+      </div>
+    </div>
+
+    <div class="content">
+      <ul>
+        <li>
+          <div class="value">
+            <input type="checkbox" />
+            <p>NOTE #1</p>
+            <div class="icons">
+              <i class="fa-solid fa-pen"></i>
+              <i class="fa-solid fa-trash"></i>
+            </div>
+          </div>
+        </li>
+        <hr />
+        <li>
+          <div class="value">
+            <input type="checkbox" />
+            <p>NOTE #2</p>
+            <div class="icons">
+              <i class="fa-solid fa-pen"></i>
+              <i class="fa-solid fa-trash"></i>
+            </div>
+          </div>
+        </li>
+        <hr />
+        <li>
+          <div class="value">
+            <input type="checkbox" />
+            <p>NOTE #3</p>
+            <div class="icons">
+              <i class="fa-solid fa-pen"></i>
+              <i class="fa-solid fa-trash"></i>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="add">
+        <i class="fa-solid fa-plus"></i>
+      </div>
+    </div>
+  </body>
 </html>
