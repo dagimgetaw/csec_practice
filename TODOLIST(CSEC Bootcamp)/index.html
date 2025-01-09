@@ -69,9 +69,20 @@
           </div>
         </li>
       </ul>
-      <div class="add">
+      <div class="add" onclick="handlePopUp()">
         <i class="fa-solid fa-plus"></i>
       </div>
+      <div id="popup">
+        <i class="fa-solid fa-x" id="close" onclick="handleClosePopUp()"></i>
+        <h1>NEW NOTE</h1>
+        <input type="text" placeholder="Input your note... " />
+        <div class="btns">
+          <button class="cancel"><a href="">CANCEL</a></button>
+          <button class="apply"><a href="">APPLY</a></button>
+        </div>
+      </div>
     </div>
+    <div class="black_bg"></div>
+    <script src="script.js"></script>
   </body>
 </html>
