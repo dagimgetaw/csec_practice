@@ -91,7 +91,7 @@ select option {
 }
 
 .content {
-  width: 36rem;
+  /* width: 36rem; */
   margin: 0 auto;
 }
 
@@ -262,4 +262,27 @@ hr {
   font-family: var(--font-text);
   font-size: 1rem;
   margin-top: 1rem;
+}
+/* -------------------------------- */
+@media (max-width: 650px) {
+  .search_box .search {
+    width: 20rem;
+  }
+}
+@media (max-width: 510px) {
+  .search_box .search {
+    width: 15rem;
+  }
+}
+@media (max-width: 430px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 0;
+  }
+  .search_box .search {
+    width: 20rem;
+  }
 }
