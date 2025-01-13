@@ -51,6 +51,11 @@ header h1 {
   border: 1px solid var(--clr-item);
   width: 25rem;
 }
+.search_box .search::placeholder {
+  font-family: var(--font-text);
+  font-size: 1.1rem;
+  color: #cdcdcd;
+}
 .search_box .search,
 .dropdown,
 .color {
@@ -89,6 +94,32 @@ select option {
   width: 36rem;
   margin: 0 auto;
 }
+
+.no_content {
+  text-align: center;
+  margin-top: 2rem;
+}
+.no_content img {
+  width: 200px;
+  margin: 0 auto;
+  display: none;
+}
+.no_content .light {
+  display: inline-block;
+}
+.no_content p {
+  font-family: var(--font-text);
+  padding-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.no_content p {
+  font-family: var(--font-text);
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
 ul {
   list-style: none;
   padding: 2rem 0 5rem;
@@ -120,6 +151,9 @@ hr {
   cursor: pointer;
   padding-left: 0.6rem;
   color: #cdcdcd;
+}
+#note {
+  text-decoration: none;
 }
 .add {
   position: absolute;
@@ -168,6 +202,11 @@ hr {
   width: 25rem;
   border-radius: 0.5rem;
 }
+#popup input::placeholder {
+  font-family: var(--font-text);
+  font-size: 1rem;
+  color: #cdcdcd;
+}
 #popup .btns {
   display: flex;
   justify-content: space-between;
@@ -177,22 +216,23 @@ hr {
   padding: 0.5rem 2rem;
   border: 1px solid var(--clr-item);
   border-radius: 0.3rem;
+  cursor: pointer;
 }
-#popup .btns button a {
+#popup .btns button {
   font-weight: 600;
   font-family: var(--font-text);
-  font-size: 1.3em;
+  font-size: 1.1em;
 }
 #popup .btns button:first-child {
   background: transparent;
 }
-#popup .btns button:first-child a {
+#popup .btns button:first-child {
   color: var(--clr-item);
 }
 #popup .btns button:last-child {
   background-color: var(--clr-item);
 }
-#popup .btns button:last-child a {
+#popup .btns button:last-child {
   color: var(--clr-bg);
 }
 .black_bg {
@@ -206,4 +246,20 @@ hr {
   z-index: 1000;
   filter: grayscale(100%);
   /* backdrop-filter: blur(5px); */
+}
+#task-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#task-list li {
+  margin: 10px 0;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+#note-input {
+  font-family: var(--font-text);
+  font-size: 1rem;
+  margin-top: 1rem;
 }
