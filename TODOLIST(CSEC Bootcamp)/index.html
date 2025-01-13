@@ -29,56 +29,37 @@
           <option value="incomplete">Incomplete</option>
         </select>
       </div>
-      <div class="color">
+      <div class="color" onclick="handleColor()">
         <i class="fa-solid fa-moon"></i>
+        <i class="fa-solid fa-sun"></i>
       </div>
     </div>
 
     <div class="content">
-      <ul>
-        <li>
-          <div class="value">
-            <input type="checkbox" />
-            <p>NOTE #1</p>
-            <div class="icons">
-              <i class="fa-solid fa-pen"></i>
-              <i class="fa-solid fa-trash"></i>
-            </div>
-          </div>
-        </li>
-        <hr />
-        <li>
-          <div class="value">
-            <input type="checkbox" />
-            <p>NOTE #2</p>
-            <div class="icons">
-              <i class="fa-solid fa-pen"></i>
-              <i class="fa-solid fa-trash"></i>
-            </div>
-          </div>
-        </li>
-        <hr />
-        <li>
-          <div class="value">
-            <input type="checkbox" />
-            <p>NOTE #3</p>
-            <div class="icons">
-              <i class="fa-solid fa-pen"></i>
-              <i class="fa-solid fa-trash"></i>
-            </div>
-          </div>
-        </li>
-      </ul>
+      <div class="no_content">
+        <img
+          src="assets/light.png"
+          alt="light empty content image"
+          class="light"
+        />
+        <img
+          src="assets/dark.png"
+          alt="dark empty content image"
+          class="dark"
+        />
+        <p>Empty...</p>
+      </div>
+      <ul id="task-list"></ul>
       <div class="add" onclick="handlePopUp()">
         <i class="fa-solid fa-plus"></i>
       </div>
       <div id="popup">
         <i class="fa-solid fa-x" id="close" onclick="handleClosePopUp()"></i>
         <h1>NEW NOTE</h1>
-        <input type="text" placeholder="Input your note... " />
+        <input type="text" id="note-input" placeholder="Input your note... " />
         <div class="btns">
-          <button class="cancel"><a href="">CANCEL</a></button>
-          <button class="apply"><a href="">APPLY</a></button>
+          <button class="cancel" onclick="handleClosePopUp()">CANCEL</button>
+          <button class="apply" onclick="handleApply()">APPLY</button>
         </div>
       </div>
     </div>
